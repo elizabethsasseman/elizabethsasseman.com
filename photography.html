@@ -83,7 +83,7 @@
       font-size: 4vw;
       padding-right: 50px;
     }
-    @media only screen and (max-width: 1200px) {
+    @media only screen and (min-width: 1200px) {
       .nav {
       font-size: 1.7vw;
       }
@@ -116,23 +116,16 @@
         padding: 0 4px;
     }
     .column {
-        -ms-flex: 49%;
-        flex: 49%;
-        max-width: 49%;
-        padding: 0 4px;
-    }
-    @media only screen and (max-width: 600px) {
-      .column {
         -ms-flex: 100%;
         flex: 100%;
         max-width: 100%;
-      }
+        padding: 0 4px;
     }
-    @media only screen and (min-width: 900px) {
+    @media only screen and (min-width: 1200px) {
       .column {
-        -ms-flex: 32.5%;
-        flex: 32.5%;
-        max-width: 32.5%;
+        -ms-flex: 33.33%;
+        flex: 33.33%;
+        max-width: 33.33%;
       }
     } 
     .column img {
