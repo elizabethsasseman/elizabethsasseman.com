@@ -65,10 +65,15 @@
     	justify-content: space-between;
     	color: #222222;
     }
+    @media only screen and (min-width: 1200px) {
+      .header {
+        height: 150px;
+      }
+    }
     .name {
       text-align: left;
       font-weight: 100;
-      font-size: 10vw;
+      font-size: 8vw;
       padding-left: 40px;
     }
     @media only screen and (min-width: 1200px) {
@@ -77,16 +82,20 @@
         padding-left: 50px;
       }
     }
-    .contact {
+    .nav {
       text-align: right;
       font-weight: 500;
-      font-size: 4vw;
+      font-size: 3vw;
       padding-right: 50px;
     }
     @media only screen and (min-width: 1200px) {
-      .contact {
+      .nav {
         font-size: 1.7vw;
       }
+    } 
+    .nav__item {
+      display: inline;
+      margin-right: 1vw;
     } 
     .main {
     	background-color: #222222;
@@ -146,9 +155,11 @@
 		<div class="name">
 			Elizabeth Sasseman
 		</div>
-		<div class="contact">
-			<a href="index.html">home</a>
-		</div>
+    <nav>
+      <ul class="nav">
+      <li class="nav__item"><a href="index.html">home</a></li>
+      </ul>
+    </nav>
 	</div>
 
 	<div class="main">
