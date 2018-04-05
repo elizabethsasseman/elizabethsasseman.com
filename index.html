@@ -56,28 +56,27 @@
 
     /* my styling */
     .header {
-		background-color: white;
-		height: 140px;
-		font-family: 'Alegreya Sans', sans-serif;
-	  	display: flex;
-	  	width: 100%;
-	  	align-items: center;
-	  	justify-content: space-between;
-	  	color: #222222;
+      background-color: white;
+      height: 250px;
+      font-family: 'Alegreya Sans', sans-serif;
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+      color: #222222;
+    }
+    @media only screen and (min-width: 1200px) {
+      .header {
+        height: 150px;
+      }
     }
     .name {
       text-align: left;
       font-weight: 100;
-      font-size: 6vw;
+      font-size: 8vw;
       padding-left: 40px;
     }
-    @media only screen and (max-width: 600px) {
-      .name {
-      font-size: 8vw;
-      padding-left: 30px;
-      }
-    }
-    @media only screen and (min-width: 900px) {
+    @media only screen and (min-width: 1200px) {
       .name {
         font-size: 5vw;
         padding-left: 50px;
@@ -86,39 +85,18 @@
     .nav {
       text-align: right;
       font-weight: 500;
-      font-size: 2vw;
+      font-size: 3vw;
       padding-right: 50px;
     }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (min-width: 1200px) {
       .nav {
-      font-size: 3vw;
+      font-size: 1.7vw;
       }
     }
-    @media only screen and (min-width: 900px) {
-      .nav {
-        font-size: 1.7vw;
-      }
-    } 
     .nav__item {
       display: inline;
       margin-right: 1vw;
-    } 
-    .bar {
-    	background-color: white;
-    	height: 5vw;
-    	width: 100%;
-    	color: #222222;
-    	position: absolute;
-    	display: flex;
-    	align-items: center;
-    	justify-content: space-around;
-    	font-family: 'Alegreya Sans', sans-serif;
-    	font-size: 3vw;
-    	font-weight: 300;
-    	z-index: 5;
-    	opacity: 0.7;
-    	float: down;
-    }
+    }  
     .main {
     	background-color: white;
     	height: 900px;
@@ -126,49 +104,36 @@
     	color: #222222;
     }
     .about {
-    	padding-top: 50px;
-    	font-family: 'Alegreya Sans', sans-serif;
-    	font-weight: 100;
-      	font-size: 8vw;
-      	text-align: center;
+      padding-top: 170px;
+      font-family: 'Alegreya Sans', sans-serif;
+      font-weight: 300;
+      font-size: 7vw;
+      text-align: center;
     }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (min-width: 1200px) {
       .about {
-      font-size: 10vw;
+        font-size: 4vw;
       }
-    }
-    @media only screen and (min-width: 900px) {
-      .about {
-      	font-size: 5vw;
-      }
-    }         
+    }        
     .content {
-    	padding-top: 20px;
-    	font-family: 'Amiri', serif;
-    	font-weight: 400;
-      	font-size: 2.5vw;
-      	text-align: justify;
-      	padding-left: 100px;
-      	padding-right: 100px;
-      	padding-bottom: 100px;
-      	line-height: 3.5vw;
-    }
-    @media only screen and (max-width: 600px) {
-      .content {
-      padding-left: 80px;
-      padding-right: 80px;
-      font-size: 3.5vw;
+      padding-top: 20px;
+      font-family: 'Amiri', serif;
+      font-weight: 400;
+      font-size: 3vw;
+      text-align: justify;
+      padding-left: 50px;
+      padding-right: 50px;
       line-height: 4.5vw;
-      }
+      padding-bottom: 100px;
     }
-    @media only screen and (min-width: 900px) {
+    @media only screen and (min-width: 1200px) {
       .content {
-      padding-left: 200px;
-      padding-right: 200px;
-      font-size: 1.5vw;
-      line-height: 2.5vw;
+      padding-left: 150px;
+      padding-right: 150px;
+      font-size: 1.8vw;
+      line-height: 2.8vw;
       }
-    }     
+    }    
     img:hover {
     	opacity: 0.7;
     	transition-duration: 0.5s;
@@ -180,24 +145,29 @@
     a:hover {
     	font-weight: 700;
     }
-    .footer {
-      background-color: #f3f3f3;
-      width: 100%;
-      text-align: center;
-      color: #848484;
-      padding-top: 2%;
-      padding-bottom: 2%;
-      font-family: 'Alegreya Sans', sans-serif;
-      font-size: 15px;
-      font-weight: 300;
-      line-height: 140%;
+    .row {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      padding: 0 4px;
     }
-    @media only screen and (max-width: 850px) {
-      .footer {
-      padding-top: 3%;
-      padding-bottom: 3%;
-      font-size: 10px;
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+        padding: 0 4px;
+    }
+    @media only screen and (min-width: 1200px) {
+      .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
       }
+    } 
+    .column img {
+        margin-top: 8px;
+        vertical-align: middle;
     }
 
 
@@ -225,16 +195,16 @@
 	</div>
 
 	<div class="main">
-		<div class="bar">
-			<div class="modeling">
-				Modeling
-			</div>
-			<div class="photography">
-				Photography
-			</div>
-		</div>
-		<a href="modeling.html"><img src="me08.jpg" width="49.5%"></a>
-		<a href="photography.html"><img src="p02.jpg" width="49.55%"></a>
+
+	<div class="row">
+      <div class="column">
+        <a href="modeling.html"><img src="covermodeling.jpg" width="100%"></a>
+      </div>
+      <div class="column">
+        <a href="photography.html"><img src="coverphotography.jpg" width="100%"></a>
+      </div>
+    </div>
+
 
 		<div class="about">
 			About
@@ -245,9 +215,6 @@
 		</div>
 	</div>
 
-  <div class="footer">
-    website by: Elizabeth Sasseman
-  </div>
 
 
 </body>
