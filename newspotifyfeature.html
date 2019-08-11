@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-overrides.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Alegreya:400,500,700,800,900|Aleo:300,400,700|Cabin:400,500,600,700|Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+    <title>Planning a Leave of Absence</title>
+  </head>
+  <body>
+
+
+    <div class="container-fluid ml-3 mt-3 mb-5">
+      <div class="row">
+        <div class="col-md-12 col-12">
+          <div class="row d-flex justify-content-start ml-3">
+            <a href="index.html"><i class="fas fa-long-arrow-alt-left fa-2x" style="color: #b3b3b3;"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid px-0">
+      <div class="row justify-content-center d-flex">
+        <div class="col-md-12 col-12 bg-dark">
+          <div class="row justify-content-center d-flex mt-5">
+            <div class="col-md-8 col-12 bg-dark px-3">
+              <p class="alegreya300 text-white px-3">I knew there had to be a way to keep songs with multiple parts
+                together even when a playlist is shuffled. Let me explain what I mean by songs with multiple parts.
+                Check out the Spotify screenshots below:</p>
+              <div class="row justify-content-center d-flex pt-2">
+                <div class="col-md-4 col-12 align-items-center justify-content-center d-flex img-fluid">
+                  <img src="imgs/song01.png" style="max-width: 100%; height: auto;"/>
+                </div>
+                <div class="col-md-4 col-12 align-items-center justify-content-center d-flex img-fluid">
+                  <img src="imgs/song02.png" style="max-width: 100%; height: auto;"/>
+                </div>
+                <div class="col-md-4 col-12 align-items-center justify-content-center d-flex img-fluid">
+                  <img src="imgs/song03.png" style="max-width: 100%; height: auto;"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid px-0">
+      <div class="row justify-content-center d-flex">
+        <div class="col-md-12 col-12 bg-dark03">
+          <div class="row justify-content-center d-flex mt-5">
+            <div class="col-md-8 col-12 bg-dark03 px-3">
+              <p class="alegreya300 text-white px-3">I used an example of a classic song, Fly Like An Eagle by Steve
+                Miller Band. You can see that Space Intro and Fly Like An Eagle are split into two parts, even though
+                together they make up one very popular song. My guess is that there are a lot of people who don't care
+                to listen to the Space Intro part of Fly Like An Eagle every time they listen to the song, so it make
+                sense Spotify has kept these parts separate. But if someone - who does want to listen to both parts
+                together as the complete song that it is - adds both parts to a playlist they intend on shuffling,
+                I'm certain most people like me will be frustrated when both parts don't play together or in the right order.
+              </p>
+              <p class="alegreya300 text-white px-3">There are a lot of songs split into multiple parts like this that
+                I've found on Spotify. My goal was to design a feature that would allow users the option to play these
+                parts together as one song and in the right order, even when a playlist is shuffled.
+              </p>
+              <div class="row justify-content-center d-flex pt-2">
+                <div class="col-md-12 col-12 align-items-center justify-content-center d-flex img-fluid">
+                  <img src="imgs/headphones.jpg" style="max-width: 100%; height: auto;"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid px-0">
+      <div class="row justify-content-center d-flex">
+        <div class="col-md-12 col-12 bg-dark02">
+          <div class="row justify-content-center d-flex mt-5">
+            <div class="col-md-8 col-12 bg-dark02 px-3">
+              <h2 class="alegreya300 text-white px-3">Brainstorm</h2>
+              <p class="alegreya300 text-white px-3">I wanted to design a feature that would function seamlessly with
+                Spotify's current features. I also wanted to allow users the choice to not link, link, unlink or re-link parts
+                as often or little as they wanted. I knew allowing as much flexibility as possible would be necessary
+                in order to please each type of user. Below are some initial questions I began considering:
+              </p>
+              <ul class="alegreya300 mr-3 text-white ml-3">
+                <li>Should there be a limit in the number of parts that can be linked? What would happen if someone tried to link thousands of songs?</li>
+                <li>Should it be possible to unlink one part at a time or would unlinking one part unlink all parts?</li>
+                <li>Does each linked part need to be on the same playlist or album in order to play as a linked group of parts?</li>
+                <li>Will parts remain linked if the playlist these parts are on is deleted?</li>
+                <li>Are linked parts on a collaborative playlist linked for all users who have access to that playlist? Should that option exist?</li>
+                <li>If three parts are linked and on a shuffled playlist, will they exist in the randomized queue once or three times?</li>
+              </ul>
+              <div class="row justify-content-center d-flex pt-2">
+                <div class="col-md-12 col-12 align-items-center justify-content-center d-flex img-fluid">
+                  <img src="imgs/phone02.jpeg" style="max-width: 100%; height: auto;"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid px-0">
+      <div class="row justify-content-center d-flex">
+        <div class="col-md-12 col-12 bg-dark">
+          <div class="row justify-content-center d-flex mt-5">
+            <div class="col-md-8 col-12 bg-dark px-3">
+              <h2 class="alegreya300 text-white px-3">Discuss & Research</h2>
+              <p class="alegreya300 text-white px-3">I described my idea to several friends and asked if they thought the
+                ability to link parts of songs in Spotify would be useful. Everyone felt like it would be a beneficial
+                feature, but most of them hadn't actually run into a situation where they wished the ability to link parts
+                existed. I decided to create a poll in one of my Instagram stories to get a few more responses.
+                Below are screenshots of my Instagram poll:
+              </p>
+              <div class="row justify-content-center d-flex">
+                <div class="col-md-4 col-12 align-items-center justify-content-center d-flex img-fluid">
+                  <img src="imgs/poll01.png" style="max-width: 100%; height: auto;"/>
+                </div>
+                <div class="col-md-4 col-12 align-items-center justify-content-center d-flex img-fluid">
+                  <img src="imgs/poll02.png" style="max-width: 100%; height: auto;"/>
+                </div>
+                <div class="col-md-4 col-12 align-items-center justify-content-center d-flex img-fluid">
+                  <img src="imgs/poll03.png" style="max-width: 100%; height: auto;"/>
+                </div>
+              </div>
+              <p class="alegreya300 text-white px-3 mt-4">Based on my poll, 86% of the 22 people who responded feel like the
+                ability to link parts of songs should be possible.
+              </p>
+              <p class="alegreya300 text-white px-3 mb-4">There are over 140 million active monthly Spotify users, according
+                to a simple Google search. Although my poll reached an extremely small sample of this population, I wanted
+                to design this feature for fun, regardless of how many Spotify users shared in my frustration. My plan was to
+                post my idea on Spotify's Ideas Submissions page and see what sort of feedback it would get.
+              </p>
+              <div class="row justify-content-center d-flex pt-2">
+                <div class="col-md-12 col-12 align-items-center justify-content-center d-flex img-fluid">
+                  <img src="imgs/music.jpeg" style="max-width: 100%; height: auto;"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid px-0">
+      <div class="row justify-content-center d-flex">
+        <div class="col-md-12 col-12 bg-dark02">
+          <div class="row justify-content-center d-flex mt-5">
+            <div class="col-md-8 col-12 bg-dark02 px-3">
+              <h2 class="alegreya300 text-white px-3">Ideas</h2>
+              <p class="alegreya300 text-white px-3">Below is an initial sketch using the current functionality of the
+                mobile version of the Spotify app. My idea is to add the linking feature to the existing three dots which
+                when tapped, opens up an array of options to choose from.
+              </p>
+              <div class="row justify-content-center d-flex pt-2">
+                <div class="col-md-12 col-12 align-items-center justify-content-center d-flex img-fluid">
+                  <img src="imgs/wireframesketch.jpeg" style="max-width: 100%; height: auto;"/>
+                </div>
+              </div>
+              <p class="alegreya300 text-white px-3 mt-5">Below is a more detailed wireframe.
+              </p>
+              <div class="row justify-content-center d-flex pt-2">
+                <div class="col-md-12 col-12 align-items-center justify-content-center d-flex img-fluid">
+                  <img src="imgs/wireframe03.jpg" style="max-width: 100%; height: auto;"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid px-0">
+      <div class="row justify-content-center d-flex">
+        <div class="col-md-12 col-12 bg-dark03">
+          <div class="row justify-content-center d-flex mt-5">
+            <div class="col-md-8 col-12 bg-dark03 px-3">
+              <h2 class="alegreya300 text-white px-3">Design</h2>
+              <p class="alegreya300 text-white px-3">Below is a simple user flow of my linking functionality.
+              </p>
+              <div class="row justify-content-center d-flex pt-2">
+                <div class="col-md-12 col-12 align-items-center justify-content-center d-flex img-fluid">
+                  <img src="imgs/prototype.png" style="max-width: 100%; height: auto;"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid px-0">
+      <div class="row justify-content-center d-flex">
+        <div class="col-md-12 col-12 bg-dark">
+          <div class="row justify-content-center d-flex mt-5">
+            <div class="col-md-8 col-12 bg-dark px-3">
+              <h2 class="alegreya300 text-white px-3">Ideas Submissions</h2>
+              <p class="alegreya300 text-white px-3">After posting my idea to Spotify's Ideas Submissions page, I decided to browse around and see whether
+                any other users had come up with the same idea as me. Sure enough, one other user had submitted a similar
+                idea in 2015. And about a year ago, someone from Spotify commented on this user's post saying that this
+                idea would go into the "Not Right Now" pile because they had no plans to implement it, but that it might
+                be up for consideration eventually.
+              </p>
+              <p class="alegreya300 text-white px-3">At this point I'd happily await any responses to my post and see if anything comes of it!
+                You can see the screenshots of my post and the other user's post below.
+              </p>
+              <div class="row justify-content-center d-flex pt-2">
+                <div class="col-md-12 col-12 align-items-center justify-content-center d-flex img-fluid">
+                  <img src="imgs/final01.png" style="max-width: 100%; height: auto;"/>
+                </div>
+                <div class="col-md-12 col-12 align-items-center justify-content-center d-flex img-fluid mt-2">
+                  <img src="imgs/final02.png" style="max-width: 100%; height: auto;"/>
+                </div>
+                <div class="col-md-12 col-12 align-items-center justify-content-center d-flex img-fluid mt-2">
+                  <img src="imgs/final03.png" style="max-width: 100%; height: auto;"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="container-fluid ml-3 mb-5 mt-3">
+      <div class="row">
+        <div class="col-md-12 col-12">
+          <div class="row d-flex justify-content-start ml-3">
+            <a href="#"><i class="fas fa-long-arrow-alt-up fa-2x" style="color: #b3b3b3;"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  </body>
+</html>
